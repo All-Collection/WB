@@ -5,7 +5,7 @@ module.exports = {
     category: 'dev',
     description: 'Closes or opens the group',
     async execute(client, arg, M) {
-        const isAdmin = isGroup ? groupAdmin.includes(sender) : false;
+        const isAdmin = M.isGroup ? groupAdmin.includes(sender) : false;
         if (!isAdmin) return
         const group = ['open', 'close']
         if (!arg) return M.reply('Sorry you did not give any term!')
