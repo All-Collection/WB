@@ -8,4 +8,5 @@ module.exports = {
         M.reply('Restarting...')
         await client.utils.restart()
     }
+    
 }
