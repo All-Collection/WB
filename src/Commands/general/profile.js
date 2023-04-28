@@ -17,7 +17,7 @@ module.exports = {
             pfp = await client.profilePictureUrl(user, 'image')
         } catch {
             pfp =
-                'https://w0.peakpx.com/wallpaper/346/996/HD-wallpaper-love-live-sunshine-404-error-love-live-sunshine-anime-girl-anime.jpg'
+                'https://telegra.ph/file/35bda7ae74dfd4095fc62.png'
         }
 
         let bio
