@@ -78,15 +78,18 @@ module.exports = MessageHandler = async (messages, client) => {
         const command =
             client.cmd.get(cmdName) || client.cmd.find((cmd) => cmd.aliases && cmd.aliases.includes(cmdName))
 
-        if (!command) return M.reply('No such command found! BAKA')
+        //if (!command) return M.reply('No such command found! BAKA')
         if (!groupAdmins.includes(sender) && command.category == 'moderation')
             return M.reply('This command can only be used by group or community admins')
         if (!groupAdmins.includes(client.user.id.split(':')[0] + '@s.whatsapp.net') && command.category == 'moderation')
             return M.reply('This command can only be used when bot is admin')
         if (!isGroup && command.category == 'moderation') return M.reply('This command is ment to use in groups')
+
         if (!client.mods.includes(sender.split('@')[0]) && command.category == 'dev')
-            return M.reply('This command only can be accessed by the mods')
-        command.execute(client, arg, M)
+           
+
+
+            command.execute(client, arg, M)
 
         //Will add exp according to the commands
         await client.exp.add(sender, command.exp)
