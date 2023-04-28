@@ -2,7 +2,7 @@ module.exports = {
     name: 'promote',
     aliases: ['promo'],
     exp: 10,
-    category: 'moderation',
+    category: 'dev',
     description: 'Promotes the taged user',
     async execute(client, arg, M) {
         if (!M.mentions.length) return M.reply('You must tag the user before using!')

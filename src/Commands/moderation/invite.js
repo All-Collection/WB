@@ -2,7 +2,7 @@ module.exports = {
     name: 'invite',
     aliases: ['inv', 'gclink', 'grouplink'],
     exp: 10,
-    category: 'moderation',
+    category: 'dev',
     description: 'Get the group link',
     async execute(client, arg, M) {
         const invitelink = (await client.DB.get('invitelink')) || []

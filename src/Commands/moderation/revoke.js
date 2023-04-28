@@ -2,7 +2,7 @@ module.exports = {
     name: 'revoke',
     aliases: ['reset'],
     exp: 10,
-    category: 'moderation',
+    category: 'dev',
     description: 'Resets group link',
     async execute(client, arg, M) {
         await client.groupRevokeInvite(M.from).then((res) => {

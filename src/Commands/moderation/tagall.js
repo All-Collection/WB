@@ -2,7 +2,7 @@ module.exports = {
     name: 'tagall',
     aliases: ['everyone'],
     exp: 18,
-    category: 'moderation',
+    category: 'dev',
     description: 'Tag all the users present in the group',
     async execute(client, arg, M) {
         const groupMetadata = await client.groupMetadata(M.from)
