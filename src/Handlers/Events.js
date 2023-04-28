@@ -46,4 +46,5 @@ module.exports = EventsHandler = async (event, client) => {
         text,
         mentions: event.participants
     })
+
 }

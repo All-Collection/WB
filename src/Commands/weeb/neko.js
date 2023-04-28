@@ -11,11 +11,38 @@ module.exports = {
             return M.reply(err.toString())
             client.log(err, 'red')
         })
-        client.sendMessage(M.from, {
-            image: {
-                url: res.data.url
+
+        let buttons = [
+            {
+              buttonId: `${client.prefix}owner`,
+              buttonText: { displayText: "🧣 Bot Owner 🧣" },
+              type: 1,
             },
-            caption: `_Neko Neko Ni~_`
-        })
+            {
+              buttonId: `${client.prefix}repo`,
+              buttonText: { displayText: "🧩 Source Code 🧩" },
+              type: 1,
+            },
+            {
+              buttonId: `${client.prefix}play hi`,
+              buttonText: { displayText: `🔖 Song of the day 🔖` },
+              type: 1,
+            },
+          ];
+          let buttonMessage = {
+            video: { url: "https://media.tenor.com/q0iOtisXZ0oAAAPo/anime-girl.mp4" },
+            gifPlayback: true,
+            caption: "textHelpMenu",
+            buttons: buttons,
+            footer: "hi",
+            headerType: 4,
+          };
+
+
+
+
+
+
+        client.sendMessage(M.from,buttonMessage )
     }
 }
