@@ -1,6 +1,6 @@
 module.exports = {
     name: 'group',
-    aliases: ['gc'],
+    aliases: ['devAD'],
     exp: 5,
     category: 'dev',
     description: 'Closes or opens the group',
