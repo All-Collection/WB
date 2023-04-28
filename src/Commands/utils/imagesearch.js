@@ -3,7 +3,7 @@ const google = require('googlethis')
 module.exports = {
     name: 'imagesearch',
     aliases: ['imgs'],
-    category: 'utils',
+    category: 'dev',
     exp: 7,
     description: 'Searches image from google.com',
     async execute(client, arg, M) {

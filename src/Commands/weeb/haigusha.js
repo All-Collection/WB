@@ -1,7 +1,7 @@
 module.exports = {
     name: 'haigusha',
     aliases: ['hg'],
-    category: 'weeb',
+    category: 'dev',
     exp: 5,
     description: 'Summons a random anime character to marry',
     async execute(client, arg, M) {

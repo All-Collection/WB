@@ -3,7 +3,7 @@ const axios = require('axios')
 module.exports = {
     name: 'subreddit',
     aliases: ['sr'],
-    category: 'utils',
+    category: 'dev',
     exp: 7,
     description: 'Sends an image of a random waifu',
     async execute(client, arg, M) {

@@ -3,7 +3,7 @@ const { Sticker, StickerTypes } = require('wa-sticker-formatter')
 module.exports = {
     name: 'steal',
     aliases: ['take'],
-    category: 'utils',
+    category: 'dev',
     exp: 10,
     description: 'steal [quote message containing sticker] <pack> | <author>',
     async execute(client, arg, M) {

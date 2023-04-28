@@ -1,7 +1,7 @@
 module.exports = {
     name: 'removebg',
     aliases: ['rbg'],
-    category: 'utils',
+    category: 'dev',
     exp: 10,
     description: 'Removes background from the image',
     async execute(client, arg, M) {

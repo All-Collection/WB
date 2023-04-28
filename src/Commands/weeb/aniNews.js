@@ -3,7 +3,7 @@ const { NEWS } = require('@consumet/extensions')
 module.exports = {
     name: 'aninews',
     aliases: ['animenews'],
-    category: 'weeb',
+    category: 'dev',
     exp: 15,
     description: 'Gives you news about anime',
     async execute(client, arg, M) {

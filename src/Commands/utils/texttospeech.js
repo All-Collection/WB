@@ -4,7 +4,7 @@ const languages = require('bing-translate-api/src/lang.json')
 module.exports = {
     name: 'texttospeech',
     aliases: ['tts'],
-    category: 'utils',
+    category: 'dev',
     exp: 0,
     description: 'Text to speech',
     async execute(client, arg, M) {

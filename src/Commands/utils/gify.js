@@ -3,7 +3,7 @@ const axios = require('axios')
 module.exports = {
     name: 'getgif',
     aliases: ['gify'],
-    category: 'utils',
+    category: 'dev',
     exp: 7,
     description: 'Searches gif',
     async execute(client, arg, M) {

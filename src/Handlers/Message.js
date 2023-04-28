@@ -89,14 +89,11 @@ module.exports = MessageHandler = async (messages, client) => {
             return M.reply('This command can only be used when bot is admin')
         if (!isGroup && command.category == 'moderation') return M.reply('This command is ment to use in groups')
 
-
-        if (!groupAdmins || !client.mods.includes(sender.split('@')[0]) && command.category == 'devAD')
-           return
-
         if (!client.mods.includes(sender.split('@')[0]) && command.category == 'dev')
            return //M.reply('This command only can be accessed by the mods')
         command.execute(client, arg, M)
 
+        
         //Will add exp according to the commands
         await client.exp.add(sender, command.exp)
 

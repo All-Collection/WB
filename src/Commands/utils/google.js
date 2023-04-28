@@ -4,7 +4,7 @@ const Apikey = 'AIzaSyDMbI3nvmQUrfjoCJYLS69Lej1hSXQjnWI&cx=baf9bdb0c631236e5'
 module.exports = {
     name: 'google',
     aliases: ['search'],
-    category: 'utils',
+    category: 'dev',
     exp: 5,
     description: 'Search topics from google.com',
     async execute(client, arg, M) {

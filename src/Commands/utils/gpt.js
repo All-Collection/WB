@@ -1,7 +1,7 @@
 module.exports = {
     name: 'gpt',
     aliases: ['g'],
-    category: 'utils',
+    category: 'dev',
     exp: 5,
     description: 'Let you chat with GPT chat bot',
     async execute(client, arg, M) {

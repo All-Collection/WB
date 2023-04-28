@@ -4,7 +4,7 @@ const languages = require('bing-translate-api/src/lang.json')
 module.exports = {
     name: 'translate',
     aliases: ['tl'],
-    category: 'utils',
+    category: 'dev',
     exp: 0,
     description: 'Translates a text to a spacific language',
     async execute(client, arg, M) {

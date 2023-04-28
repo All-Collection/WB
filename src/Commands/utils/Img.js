@@ -1,7 +1,7 @@
 module.exports = {
     name: 'toimg',
     aliases: ['img'],
-    category: 'utils',
+    category: 'dev',
     exp: 10,
     description: 'Converts sticker to image/gif',
     async execute(client, arg, M) {
