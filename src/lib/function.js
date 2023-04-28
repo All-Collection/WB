@@ -211,7 +211,7 @@ const term = (param) =>
         })
     })
 
-const restart = () => {
+const start = () => {
     exec('pm2 start src/krypton.js', (err, stdout, stderr) => {
         if (err) {
             console.log(err)
@@ -235,7 +235,7 @@ module.exports = {
     getBuffer,
     getRandomItem,
     gifToMp4,
-    restart,
+    start,
     term,
     webpToMp4,
     webpToPng
