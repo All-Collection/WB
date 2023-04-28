@@ -35,7 +35,7 @@ module.exports = {
                     await M.reply('```.```')
                     await M.reply('```..```')
                     await M.reply('```...```')
-                    M.reply('Restarting...')
+                    await M.reply('Restarting...')
                     await client.utils.term('pm2 restart krypton')
                 } else if (err) return M.reply(err)
             })
