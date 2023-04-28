@@ -135,7 +135,7 @@ function serialize(msg, client) {
                 }
             )
         msg.download = () => downloadMedia(msg.message)
-        sendPresenceUpdate('unavailable',msg.message)
+
     }
     return msg
    

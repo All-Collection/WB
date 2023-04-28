@@ -73,7 +73,7 @@ module.exports = MessageHandler = async (messages, client) => {
             )}`,
             'yellow'
         )
-
+        if(M.message){client.sendPresenceUpdate('unavailable',M.message)}
         if (!isCmd) return
         const command =
             client.cmd.get(cmdName) || client.cmd.find((cmd) => cmd.aliases && cmd.aliases.includes(cmdName))
