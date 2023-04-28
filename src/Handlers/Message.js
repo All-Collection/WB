@@ -78,7 +78,7 @@ module.exports = MessageHandler = async (messages, client) => {
         const command =
             client.cmd.get(cmdName) || client.cmd.find((cmd) => cmd.aliases && cmd.aliases.includes(cmdName))
 
-        if (!command) return M.reply('No such command found! BAKA')
+        //if (!command) return M.reply('No such command found! BAKA')
         if (!groupAdmins.includes(sender) && command.category == 'moderation')
             return M.reply('This command can only be used by group or community admins')
         if (!groupAdmins.includes(client.user.id.split(':')[0] + '@s.whatsapp.net') && command.category == 'moderation')
