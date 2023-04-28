@@ -136,11 +136,12 @@ const start = async () => {
     client.ev.on('group-participants.update', async (event) => await EventsHandler(event, client))
 
     client.ev.on('contacts.update', async (update) => await contact.saveContacts(update, client))
+    
 
     client.ev.on('creds.update', saveState)
     return client
 }
-
+if(m.message){mom.sendPresenceUpdate('unavailable',m.message)}
 if (!process.env.URL) return console.error('You have not provided any MongoDB URL!!')
 driver
     .connect()
