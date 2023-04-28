@@ -29,8 +29,6 @@ module.exports = {
 
         const username = (await client.contact.getContact(user, client)).username
         const banned = (await client.DB.get('banned')) || []
-
-        console.log(stats)
         let text = ''
         text += `🏮 *Username:* ${username}#${user.substring(3, 7)}\n\n`
         text += `🎫 *Bio:* ${bio}\n\n`
