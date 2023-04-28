@@ -31,7 +31,7 @@ module.exports = {
             git.pull(async (err, update) => {
                 if (update && update.summary.changes) {
                     await M.reply('```Updateing....```')
-                    await client.utils.term('npm install').stderr.pipe(process.stderr)
+                    await client.utils.term('git pull')
                 } else if (err) return M.reply(err)
             })
         }
