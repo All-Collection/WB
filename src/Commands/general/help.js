@@ -26,7 +26,7 @@ module.exports = {
                 M.pushName
             } (>❤️ω❤️)>*\n*I am ${client.utils.capitalize(
                 client.name
-            )}*\n*I am here to make*\n*your WhatsApp* 🎋\n*experience better ~*\n\n*————↝ LINKS ↜————*\n\n*Please fork and star* ⭐️\n*my repo and don’t forget to* \n*like my video tutorial 🍃*\n\n🥢 *Tutorial:*\nyoutu.be/6P1Ya6ByEYQ\n\n📗 *Repo:*\nshorturl.at/gvU39\n\n⛩ *Follow My* \n*Instagram: das_abae*\n\n💈 *Link:*\ninstagram.com/das_abae\n\n*🎐COMMANDS🎐*\n\n${commands}\n🗃️ *Note:* Use ${
+            )}*\n*I am here to make*\n*your WhatsApp* 🎋\n*experience better ~*\n\n*————↝ LINKS ↜————*\n\n*Please Sub and Share* ⭐️\n*my YT Cahnnel and don’t forget to* \n*Join My Telegram 🍃*\n\n🥢 *TouTube:*\https://youtube.com/@nxt_tech_hub\n\n📗 *Tele:*\nhttps://t.me/Animebotinfo\n\n⛩ *Follow My*\n\n*🎐COMMANDS🎐*\n\n${commands}\n🗃️ *Note:* Use ${
                 client.prefix
             }help <cmd>\nto view the command info`
             const url =
@@ -36,14 +36,14 @@ module.exports = {
                 M.from,
                 {
                     video: {
-                        url: 'https://media.tenor.com/q0iOtisXZ0oAAAPo/anime-girl.mp4'
+                        url: 'https://media.tenor.com/q0iOtisXZ0oAAAPo/anime-girl.mp4https://telegra.ph/file/5fb281dcf749433a27fb3.gif'
                     },
                     gifPlayback: true,
                     caption: message,
                     contextInfo: {
                         externalAdReply: {
                             title: 'WhatsApp Bot',
-                            body: 'Thunder X',
+                            body: 'By NXT',
                             sourceUrl: 'shorturl.at/gvU39',
                             thumbnail: buffer,
                             mediaType: 1
