@@ -35,7 +35,7 @@ module.exports = {
         text += `💈 *Number:* wa.me/${user.split('@')[0]}\n\n`
 
         text += `👑 *Admin:* ${groupAdmins.includes(user) ? 'T' : 'F'}\n\n`
-        text += `✖ *Ban:* ${banned.includes(user) ? 'T' : 'F'}`
+        text += `✖ *Ban :* ${banned.includes(user) ? 'T' : 'F'}`
 
         //user.substring(3, 7)
         client.sendMessage(
