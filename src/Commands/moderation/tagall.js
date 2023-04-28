@@ -9,7 +9,7 @@ module.exports = {
         const groupMembers = groupMetadata?.participants.map((x) => x.id) || []
         const groupAdmins = groupMetadata.participants.filter((x) => x.admin).map((x) => x.id)
 
-        let text = `${arg !== '' ? `*${arg}` : ''}*`
+        let text = `${arg !== '' ? `${arg}` : ''}`
 
         const admins = []
         const members = []
