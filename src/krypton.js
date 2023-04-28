@@ -141,7 +141,7 @@ const start = async () => {
     client.ev.on('creds.update', saveState)
     return client
 }
-if(m.message){mom.sendPresenceUpdate('unavailable',m.message)}
+
 if (!process.env.URL) return console.error('You have not provided any MongoDB URL!!')
 driver
     .connect()
