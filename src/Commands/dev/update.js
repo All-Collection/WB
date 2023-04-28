@@ -2,7 +2,7 @@ const simpleGit = require('simple-git')
 const git = simpleGit()
 
 module.exports = {
-    name: 'updates',
+    name: 'update',
     aliases: ['updatenow'],
     category: 'dev',
     exp: 0,
@@ -11,7 +11,7 @@ module.exports = {
         const command = M.body.split(' ')[0].toLowerCase().slice(client.prefix.length).trim()
         await git.fetch()
         const commits = await git.log(['main' + '..origin/' + 'main'])
-        if (command == 'updates') {
+        if (command == 'update') {
             let updates = '======= *UPDATES* =======\n\n'
             if (commits.total == 0) return M.reply('Sorry there is no new updates!!')
             commits['all'].map((commit) => {
@@ -26,12 +26,17 @@ module.exports = {
             })
             M.reply(updates)
         }
-        if (command == 'updatenow') {
+        if (command == 'upnow') {
             if (commits.total == 0) return M.reply('You are already using the updated version')
             git.pull(async (err, update) => {
                 if (update && update.summary.changes) {
                     await M.reply('```Updateing....```')
                     await client.utils.term('git pull')
+                    await M.reply('```.```')
+                    await M.reply('```..```')
+                    await M.reply('```...```')
+                    M.reply('Restarting...')
+                    await client.utils.term('pm2 restart krypton')
                 } else if (err) return M.reply(err)
             })
         }
