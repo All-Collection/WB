@@ -17,7 +17,7 @@ module.exports = {
             pfp = await client.profilePictureUrl(user, 'image')
         } catch {
             pfp =
-                'https://telegra.ph/file/35bda7ae74dfd4095fc62.png'
+                'https://telegra.ph/file/f101ebf217b7de8a086f9.png'
         }
 
         let bio
