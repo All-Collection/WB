@@ -1,8 +1,8 @@
 module.exports = {
     name: 'group',
-    aliases: ['devAD'],
+    aliases: ['gc'],
     exp: 5,
-    category: 'dev',
+    category: 'devAD',
     description: 'Closes or opens the group',
     async execute(client, arg, M) {
         const group = ['open', 'close']
