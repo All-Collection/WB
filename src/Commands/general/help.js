@@ -22,10 +22,10 @@ module.exports = {
                 )}*\n\n${categories[category].map((cmd) => `• _${client.prefix}${cmd}_`).join('\n')}\n`
             }
 
-            const message = `~ <× [ *—͟͞͞${client.utils.capitalize(client.name)}* ] ×> ~\n\n*Hey 👋 ${
+            const message = `~ <× [ *—͟͞͞${client.utils.capitalize("Ghost")}* ] ×> ~\n\n*Hey 👋 ${
                 M.pushName
             } (>❤️ω❤️)>*\n*I am ${client.utils.capitalize(
-                client.name
+                "Ghost"
             )}*\n*I am here to make*\n*your WhatsApp* 🎋\n*experience better ~*\n\n*————↝ LINKS ↜————*\n\n*Please Sub and Share* ⭐️\n*my YT Cahnnel and don’t forget to* \n*Join My Telegram 🍃*\n\n🥢 *TouTube:*\https://youtube.com/@nxt_tech_hub\n\n📗 *Tele:*\nhttps://t.me/Animebotinfo\n\n⛩ *Follow My*\n\n*🎐COMMANDS🎐*\n\n${commands}\n🗃️ *Note:* Use ${
                 client.prefix
             }help <cmd>\nto view the command info`
