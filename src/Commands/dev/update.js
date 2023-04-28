@@ -3,7 +3,7 @@ const git = simpleGit()
 
 module.exports = {
     name: 'update',
-    aliases: ['updatenow'],
+    aliases: ['upnow'],
     category: 'dev',
     exp: 0,
     description: 'Updates gives the list of latest commits and updatenow updates the bot',
