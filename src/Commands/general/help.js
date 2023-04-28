@@ -43,7 +43,7 @@ module.exports = {
                     contextInfo: {
                         externalAdReply: {
                             title: 'WhatsApp Bot',
-                            body: 'Krypton wbot by Das',
+                            body: 'Thunder X',
                             sourceUrl: 'shorturl.at/gvU39',
                             thumbnail: buffer,
                             mediaType: 1
