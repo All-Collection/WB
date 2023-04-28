@@ -36,7 +36,7 @@ module.exports = {
                 M.from,
                 {
                     video: {
-                        url: 'https://im4.ezgif.com/tmp/ezgif-4-676989d1f3.gif'
+                        url: 'https://media.tenor.com/q0iOtisXZ0oAAAPo/anime-girl.mp4'
                     },
                     gifPlayback: true,
                     caption: message,
