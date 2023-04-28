@@ -36,7 +36,7 @@ module.exports = {
                 M.from,
                 {
                     video: {
-                        url: 'https://telegra.ph/file/5fb281dcf749433a27fb3.gif'
+                        url: 'https://im4.ezgif.com/tmp/ezgif-4-676989d1f3.gif'
                     },
                     gifPlayback: true,
                     caption: message,
