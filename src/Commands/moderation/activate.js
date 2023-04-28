@@ -2,7 +2,7 @@ module.exports = {
     name: 'activate',
     aliases: ['act'],
     exp: 10,
-    category: 'dev',
+    category: 'moderation',
     description: 'Activate certain features on group-chats',
     async execute(client, arg, M) {
         const toggleableGroupActions = ['mod', 'events', 'invitelink', 'chatbot', 'nsfw']
