@@ -1,7 +1,7 @@
 module.exports = {
     name: 'delete',
     aliases: ['del'],
-    category: 'general',
+    category: 'dev',
     exp: 5,
     description: 'Deletes the quoted message',
     async execute(client, arg, M) {

@@ -4,7 +4,7 @@ const yts = require('yt-search')
 module.exports = {
     name: 'ytaudio',
     aliases: ['yta'],
-    category: 'media',
+    category: 'dev',
     exp: 5,
     description: 'Downloads given YT Video and sends it as Audio',
     async execute(client, arg, M) {

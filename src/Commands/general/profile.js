@@ -3,7 +3,7 @@ const { getStats } = require('../../lib/stats')
 module.exports = {
     name: 'profile',
     aliases: ['p'],
-    category: 'general',
+    category: 'dev',
     exp: 5,
     description: 'Gives you your stats',
     async execute(client, arg, M) {

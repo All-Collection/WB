@@ -4,7 +4,7 @@ const sortArray = require('sort-array')
 module.exports = {
     name: 'leaderboard',
     aliases: ['lb'],
-    category: 'general',
+    category: 'dev',
     exp: 5,
     description: "Displays global's or group's leaderboord of a specific field\nEx: lb gold gc",
     async execute(client, arg, M) {

@@ -1,7 +1,7 @@
 module.exports = {
     name: 'help',
     aliases: ['h', 'menu', 'list'],
-    category: 'general',
+    category: 'dev',
     exp: 10,
     description: 'Displays the command list or specific command info',
     async execute(client, arg, M) {
