@@ -30,10 +30,9 @@ module.exports = {
         const username = (await client.contact.getContact(user, client)).username
         const banned = (await client.DB.get('banned')) || []
         let text = ''
-        text += `🏮 *Username:* ${username}#${user.id}\n\n`
+        text += `🏮 *Userlink:* wa.me/${user.split('@')[0]}\n\n`
         text += `🎫 *Bio:* ${bio}\n\n`
-        text += `💈 *Number:* wa.me/${user.split('@')[0]}\n\n`
-        text += `👑 *Admins:* ${groupAdmins.includes(user)}\n\n`
+        text += `💈 *Number:* +${user.split('@')[0]}\n\n`
         text += `👑 *Admin:* ${groupAdmins.includes(user) ? 'T' : 'F'}\n\n`
         text += `✖ *Ban :* ${banned.includes(user) ? 'T' : 'F'}`
 
