@@ -12,7 +12,7 @@ module.exports = {
         await git.fetch()
         const commits = await git.log(['main' + '..origin/' + 'main'])
         if (command == 'update') {
-            let updates = '======= *UPDATES* =======\n\n'
+            let updates = '‹________ *UPDATES* ________›\n\n'
             if (commits.total == 0) return M.reply('Sorry there is no new updates!!')
             commits['all'].map((commit) => {
                 updates +=
@@ -45,7 +45,7 @@ module.exports = {
               let buttonMessage = {
                 text: updates,
                 buttons: buttons,
-                footer: "hi",
+                footer: "updates from NXT Ghost",
                 headerType: 4,
               };
 
@@ -56,7 +56,7 @@ module.exports = {
 
         }
         if (command == 'up') {
-            let updates = '======= *UPDATES* =======\n\n'
+            let updates = '‹________ *UPDATES* ________›\n\n'
             if (commits.total == 0) return M.reply('Sorry there is no new updates!!')
             commits['all'].map((commit) => {
                 updates +=
@@ -68,7 +68,32 @@ module.exports = {
                     commit.author_name +
                     '>```\n'
             })
-            M.reply(updates)
+
+            let buttons = [
+                {
+                  buttonId: `${client.prefix}upnow`,
+                  buttonText: { displayText: "📲 Update 📲" },
+                  type: 1,
+                },
+                {
+                  buttonId: `${client.prefix}restart`,
+                  buttonText: { displayText: "♻️ Restart ♻️" },
+                  type: 1,
+                },
+                {
+                  buttonId: `${client.prefix}up`,
+                  buttonText: { displayText: `🔎 Check again 🔎` },
+                  type: 1,
+                },
+              ];
+              let buttonMessage = {
+                text: updates,
+                buttons: buttons,
+                footer: "updates from NXT Ghost",
+                headerType: 4,
+              };
+
+              client.sendMessage(M.from,buttonMessage )
         }
         if (command == 'upnow') {
             if (commits.total == 0) return M.reply('You are already using the updated version')
@@ -76,11 +101,12 @@ module.exports = {
                 if (update && update.summary.changes) {
                     await M.reply('```Updateing....```')
                     await client.utils.term('git pull')
-                    await M.reply('```.```')
-                    await M.reply('```..```')
-                    await M.reply('```...```')
+                    await M.reply('```▰▱▰```')
+                    await M.reply('```▰▱▰▱```')
+                    await M.reply('```▰▱▰▱▰▱```')
                     await M.reply('Restarting...')
                     await client.utils.term('pm2 restart krypton')
+                    
                 } else if (err) return M.reply(err)
             })
         }
