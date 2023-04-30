@@ -14,7 +14,7 @@ module.exports = {
 
         const admin = groupAdmins.includes(user)
 
-        if(admin !== "true" )return await M.reply(
+        if(admin !== "false" )return await M.reply(
             `need admin`
         )
         await M.reply(
