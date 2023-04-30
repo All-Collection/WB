@@ -3,7 +3,7 @@ const { spotifydl } = require('../../lib/Spotify')
 module.exports = {
     name: 'spotify',
     aliases: ['sp'],
-    category: 'devmedia',
+    category: 'media',
     exp: 5,
     description: 'Downloads given spotify track and sends it as Audio',
     async execute(client, arg, M) {

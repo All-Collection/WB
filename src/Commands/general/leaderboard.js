@@ -4,7 +4,7 @@ const sortArray = require('sort-array')
 module.exports = {
     name: 'leaderboard',
     aliases: ['lb'],
-    category: 'dev',
+    category: 'general',
     exp: 5,
     description: "Displays global's or group's leaderboord of a specific field\nEx: lb gold gc",
     async execute(client, arg, M) {
@@ -45,7 +45,7 @@ module.exports = {
         for (let i = 0; i < 10; i++) {
             const level = (await client.DB.get(`${leaderboard[i].user}.whatsapp.net_LEVEL`)) || 1
             const { requiredXpToLevelUp, rank } = getStats(level)
-            const username = (await client.contact.getContact(leaderboard[i].user, client)).username.whatsapp.net
+            const username = (await client.contact.getContact(leaderboard[i].user, client)).username.whatsapp
             const experience = (await client.exp.get(leaderboard[i].user)).whatsapp.net || 0
             text += `\n\n*>${i + 1}*\n`
             text += `🏮 *Username: ${username}*#${leaderboard[i].user.substring(

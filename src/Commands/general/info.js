@@ -1,7 +1,7 @@
 module.exports = {
     name: 'information',
     aliases: ['info'],
-    category: 'dev',
+    category: 'general',
     exp: 0,
     description: 'Get information bot information',
     async execute(client, arg, M) {

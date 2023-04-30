@@ -3,7 +3,7 @@ const yts = require('yt-search')
 module.exports = {
     name: 'ytsearch',
     aliases: ['yts'],
-    category: 'devmedia',
+    category: 'media',
     exp: 5,
     description: 'Searches the video of the given query in YouTube',
     async execute(client, arg, M) {
