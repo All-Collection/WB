@@ -1,8 +1,8 @@
 const os = require('os')
 
 module.exports = {
-    name: 'stats',
-    aliases: ['status'],
+    name: 'system',
+    aliases: ['sys'],
     category: 'music',
     exp: 8,
     description: 'Bot Stats',
@@ -15,7 +15,7 @@ module.exports = {
                 `- CPU: ${cpus[0].model} ${
                     cpus.length > 1 ? `(${cpus.length} core)` : ''
                 }\n- Platform: ${os.platform()}`
-                await M.reply(cpus)
+               
         await M.reply(text)
     }
 }
