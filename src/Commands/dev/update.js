@@ -54,9 +54,6 @@ module.exports = {
 
 
 
-
-
-
         }
         if (command == 'up') {
             let updates = '======= *UPDATES* =======\n\n'
