@@ -1,5 +1,8 @@
 const { getStats } = require('../../lib/stats')
-
+let M = serialize(JSON.parse(JSON.stringify(messages.messages[0])), client)
+const { isGroup, sender, from, body } = M
+const gcMeta = isGroup ? await client.groupMetadata(from) : ''
+const groupMembers = gcMeta?.participants || []
 const groupAdmins = groupMembers.filter((v) => v.admin).map((v) => v.id)
 
 module.exports = {
