@@ -85,7 +85,7 @@ module.exports = MessageHandler = async (messages, client) => {
 
 
 
-        if (!groupAdmins.includes(client.user.id.split(':')[0] + '@s.whatsapp.net') && command.category == 'moderation')
+        if (!groupAdmins.includes(client.user.id.split(':')[0] + '@s.whatsapp.net') && command.category == 'general')
             return M.reply('This command can only be used when bot is admin')
         if (!isGroup && command.category == 'moderation') return M.reply('This command is ment to use in groups')
 
