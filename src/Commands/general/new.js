@@ -19,7 +19,9 @@ module.exports = {
         return await M.reply(
             `need`
         )
-         await M.reply(
+
+        if(admin == "true" )
+        return await M.reply(
             `pass`
         )
 
