@@ -43,7 +43,7 @@ module.exports = {
                 },
               ];
               let buttonMessage = {
-                text: "updates",
+                text: updates,
                 buttons: buttons,
                 footer: "hi",
                 headerType: 4,
