@@ -24,11 +24,8 @@ module.exports = {
 
             const message = `~ <× [ *—͟͞͞${client.utils.capitalize("Ghost")}* ] ×> ~\n\n*Hey 👋 ${
                 M.pushName
-            } (>❤️ω❤️)>*\n*I am ${client.utils.capitalize(
-                "Ghost"
-            )}*\n*I am here to make*\n*your WhatsApp* 🎋\n*experience better ~*\n\n*————↝ LINKS ↜————*\n\n*Please Sub and Share* ⭐️\n*my YT Cahnnel and don’t forget to* \n*Join My Telegram 🍃*\n\n🥢 *TouTube:*\https://youtube.com/@nxt_tech_hub\n\n📗 *Tele:*\nhttps://t.me/Animebotinfo\n\n⛩ *Follow My*\n\n*🎐COMMANDS🎐*\n\n${commands}\n🗃️ *Note:* Use ${
-                client.prefix
-            }help <cmd>\nto view the command info`
+            } (>❤️ω❤️)>*\n*I am ${client.utils.capitalize("Ghost")}*\n*I am here to make*\n*your WhatsApp* 🎋\n*experience better ~*\n\n*————↝ LINKS ↜————*\n\n*Please Sub and Share* ⭐️\n*my YT Cahnnel and don’t forget to* \n*Join My Telegram 🍃*\n\n🥢 *TouTube:*\https://youtube.com/@nxt_tech_hub\n\n📗 *Tele:*\nhttps://t.me/Animebotinfo\n\n⛩ *Follow My*\n\n*🎐COMMANDS🎐*\n\n${commands}\n🗃️ *Note:* Use 
+            ${client.prefix}help <cmd>\nto view the command info`
             const url =
                 'https://camo.githubusercontent.com/ba1eb0374c0193222b7003d9ce1642ab1f3a138a307ec22de39cf2599a53a12c/68747470733a2f2f692e6962622e636f2f5a67725377354c2f55525548412d5255534849412e6a7067'
             const buffer = await client.utils.getBuffer(url)

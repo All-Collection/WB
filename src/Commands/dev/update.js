@@ -3,7 +3,7 @@ const git = simpleGit()
 
 module.exports = {
     name: 'update',
-    aliases: ['upnow'],
+    aliases: ['upnow',],
     category: 'dev',
     exp: 0,
     description: 'Updates gives the list of latest commits and updatenow updates the bot',
@@ -12,6 +12,53 @@ module.exports = {
         await git.fetch()
         const commits = await git.log(['main' + '..origin/' + 'main'])
         if (command == 'update') {
+            let updates = '======= *UPDATES* =======\n\n'
+            if (commits.total == 0) return M.reply('Sorry there is no new updates!!')
+            commits['all'].map((commit) => {
+                updates +=
+                    '```🔹 [' +
+                    commit.date.substring(0, 10) +
+                    ']: ' +
+                    commit.message +
+                    ' <' +
+                    commit.author_name +
+                    '>```\n'
+            })
+
+            let buttons = [
+                {
+                  buttonId: `${client.prefix}upnow`,
+                  buttonText: { displayText: "📲 Update 📲" },
+                  type: 1,
+                },
+                {
+                  buttonId: `${client.prefix}restart`,
+                  buttonText: { displayText: "♻️ Restart ♻️" },
+                  type: 1,
+                },
+                {
+                  buttonId: `${client.prefix}up`,
+                  buttonText: { displayText: `🔎 Check again 🔎` },
+                  type: 1,
+                },
+              ];
+              let buttonMessage = {
+                text: "updates",
+                buttons: buttons,
+                footer: "hi",
+                headerType: 4,
+              };
+
+              client.sendMessage(M.from,buttonMessage )
+
+
+
+
+
+
+
+        }
+        if (command == 'up') {
             let updates = '======= *UPDATES* =======\n\n'
             if (commits.total == 0) return M.reply('Sorry there is no new updates!!')
             commits['all'].map((commit) => {
