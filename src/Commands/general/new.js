@@ -13,12 +13,12 @@ module.exports = {
         const user = M.quoted?.participant ? M.quoted.participant : M.mentions[0] ? M.mentions[0] : M.sender
 
         const admin = groupAdmins.includes(user)
-
+        console.log(admin)
         if(admin == "false" )return await M.reply(
-            `${admin}`
+            `need`
         )
         else await M.reply(
-            `admin test`
+            `pass`
         )
 
 
