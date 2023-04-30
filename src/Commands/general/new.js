@@ -1,6 +1,6 @@
 const { getStats } = require('../../lib/stats')
 
-
+const groupAdmins = groupMembers.filter((v) => v.admin).map((v) => v.id)
 
 module.exports = {
     name: 'admin',
@@ -11,8 +11,8 @@ module.exports = {
     async execute(client, arg, M) {
 
 
-        if (!groupAdmins.includes(client.user.id.split(':')[0] + '@s.whatsapp.net'))
-            return M.reply('This command can only be used when bot is admin')
+        if (!groupAdmins.includes(sender))
+        return M.reply('This command can only be used by group or community admins')
     
         await M.reply(
             `f`
