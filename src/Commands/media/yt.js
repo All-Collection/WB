@@ -3,7 +3,7 @@ const yts = require('yt-search')
 
 module.exports = {
     name: 'lt',
-    aliases: ['yt'],
+    aliases: ['bt'],
     category: 'media',
     exp: 5,
     description: 'Downloads given YT Link and sends  Audio/ Video',
