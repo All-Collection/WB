@@ -16,6 +16,6 @@ module.exports = {
                     cpus.length > 1 ? `(${cpus.length} core)` : ''
                 }\n- Platform: ${os.platform()}`
                
-        await M.reply(text)
+        await M.reply(cpus)
     }
 }
