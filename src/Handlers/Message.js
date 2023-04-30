@@ -80,7 +80,7 @@ module.exports = MessageHandler = async (messages, client) => {
 
         //if (!command) return M.reply('No such command found! BAKA')
        
-        if (!groupAdmins.includes(sender) && command.category == 'dev')
+        if (!groupAdmins.includes(sender) && command.category == 'Admin')
             return M.reply('This command can only be used by group or community admins')
 
 
@@ -91,7 +91,8 @@ module.exports = MessageHandler = async (messages, client) => {
 
         if (!client.mods.includes(sender.split('@')[0]) && command.category == 'dev')
            return //M.reply('This command only can be accessed by the mods')
-
+        if (!client.mods.includes(sender.split('@')[0]) && command.category == 'Admin')
+           return //M.reply('This command only can be accessed by the mods')
         if (!client.mods.includes(sender.split('@')[0]) && command.category == 'media')
            return //M.reply('This command only can be accessed by the mods')
         if (!client.mods.includes(sender.split('@')[0]) && command.category == 'general')

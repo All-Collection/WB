@@ -2,7 +2,7 @@ module.exports = {
     name: 'remove',
     aliases: ['rem'],
     exp: 10,
-    category: 'dev',
+    category: 'Admin',
     description: 'Removes the taged user',
     async execute(client, arg, M) {
         if (!M.mentions.length) return M.reply('You must tag the user before using!')
