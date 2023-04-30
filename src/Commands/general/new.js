@@ -14,10 +14,12 @@ module.exports = {
 
         const admin = groupAdmins.includes(user)
         console.log(admin)
-        if(admin == "false" )return await M.reply(
+        if(admin !== "true" )
+
+        return await M.reply(
             `need`
         )
-        else await M.reply(
+         await M.reply(
             `pass`
         )
 
