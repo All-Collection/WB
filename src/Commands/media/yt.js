@@ -2,7 +2,7 @@ const YT = require('../../lib/YT')
 const yts = require('yt-search')
 
 module.exports = {
-    name: 'yt',
+    name: 'lt',
     aliases: ['yt'],
     category: 'media',
     exp: 5,
@@ -19,7 +19,7 @@ module.exports = {
         if (!term) return M.reply('Please use this command with a valid youtube contant link')
         if (!YT.validateURL(term.trim())) return M.reply('Please use this command with a valid youtube.com link')
         const { videoDetails } = await YT.getInfo(term)
-        M.reply('Downloading has started please have some pesence')
+        
         let text = `*Title:* ${videoDetails.title} | *Type:* Audio | *From:* ${videoDetails.ownerChannelName}`
         client.sendMessage(
             M.from,
