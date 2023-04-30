@@ -80,7 +80,7 @@ module.exports = MessageHandler = async (messages, client) => {
 
         //if (!command) return M.reply('No such command found! BAKA')
        
-        if (!groupAdmins.includes(sender) && command.category == 'moderation')
+        if (!groupAdmins.includes(sender) && command.category == 'dev')
             return M.reply('This command can only be used by group or community admins')
 
 
