@@ -17,7 +17,7 @@ module.exports = {
         if(admin == "false" )return await M.reply(
             `need admin`
         )
-        await M.reply(
+        else await M.reply(
             `admin test`
         )
 
