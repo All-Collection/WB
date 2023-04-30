@@ -33,7 +33,7 @@ module.exports = {
         text += `🏮 *Username:* ${username}#${user.substring(3, 7)}\n\n`
         text += `🎫 *Bio:* ${bio}\n\n`
         text += `💈 *Number:* wa.me/${user.split('@')[0]}\n\n`
-
+        text += `👑 *Admins:* ${groupAdmins.includes(user)}\n\n`
         text += `👑 *Admin:* ${groupAdmins.includes(user) ? 'T' : 'F'}\n\n`
         text += `✖ *Ban :* ${banned.includes(user) ? 'T' : 'F'}`
 

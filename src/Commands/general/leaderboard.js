@@ -13,6 +13,8 @@ module.exports = {
         const term = arg.split(' ')
         const groupMetadata = await client.groupMetadata(M.from)
         const groupMembers = groupMetadata?.participants.map((x) => x.id.split('.whatsapp.net')[0]) || []
+
+
         const users = !economy.includes(term[0])
             ? Object.values(await client.exp.all()).map((x) => ({ user: x.id, xp: x.value.whatsapp.net })) || []
             : Object.values(await client.cradit.all()).map((x) => ({
@@ -45,7 +47,7 @@ module.exports = {
         for (let i = 0; i < 10; i++) {
             const level = (await client.DB.get(`${leaderboard[i].user}.whatsapp.net_LEVEL`)) || 1
             const { requiredXpToLevelUp, rank } = getStats(level)
-            const username = (await client.contact.getContact(leaderboard[i].user, client)).username.whatsapp
+            const username = (await client.contact.getContact(M.sender, client)).username
             const experience = (await client.exp.get(leaderboard[i].user)).whatsapp.net || 0
             text += `\n\n*>${i + 1}*\n`
             text += `🏮 *Username: ${username}*#${leaderboard[i].user.substring(
