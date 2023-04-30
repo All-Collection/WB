@@ -15,10 +15,10 @@ module.exports = {
         for (let i of res) {
             const groupMetadata = await client.groupMetadata(i)
             const groupMembers = groupMetadata?.participants.map((x) => x.id) || []
-            const text = `🔰*「 ${client.name.toUpperCase()} BROADCAST 」*🔰\n\n🏮 Message: ${arg}`
+            const text = `🔰*「Broadcast Message」*🔰\n\n${arg}`
             await client.sendMessage(i, {
                 video: {
-                    url: 'https://media.tenor.com/AtXbqlrwklIAAAPo/anime-tv.mp4'
+                    url: 'https://media.giphy.com/media/3oKIPxpKOviwpQmdTa/giphy.gif'
                 },
                 gifPlayback: true,
                 mentions: groupMembers,

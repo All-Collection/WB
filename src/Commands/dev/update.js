@@ -57,7 +57,7 @@ module.exports = {
         }
         if (command == 'up') {
             let updates = '‹________ *UPDATES* ________›\n\n'
-            if (commits.total == 0) return M.reply('Sorry there is no new updates!!')
+            if (commits.total == 0) return M.reply('✅All done, no new updates!!')
             commits['all'].map((commit) => {
                 updates +=
                     '```🔹 [' +
@@ -106,7 +106,7 @@ module.exports = {
                     await M.reply('```▰▱▰▱▰▱```')
                     await M.reply('Restarting...')
                     await client.utils.term('pm2 restart krypton')
-                    
+
                 } else if (err) return M.reply(err)
             })
         }
