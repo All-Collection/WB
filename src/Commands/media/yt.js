@@ -21,7 +21,7 @@ module.exports = {
         const { videoDetails } = await YT.getInfo(term)
         
         let text = `*${videoDetails.title}*\n${videoDetails.ownerChannelName}`
-console.log(videoDetails)
+console.log(videoDetails.video_url)
      
    
 
