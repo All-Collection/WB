@@ -91,6 +91,12 @@ module.exports = MessageHandler = async (messages, client) => {
 
         if (!client.mods.includes(sender.split('@')[0]) && command.category == 'dev')
            return //M.reply('This command only can be accessed by the mods')
+
+        if (!client.mods.includes(sender.split('@')[0]) && command.category == 'devmedia')
+           return //M.reply('This command only can be accessed by the mods')
+
+
+           
         command.execute(client, arg, M)
 
         

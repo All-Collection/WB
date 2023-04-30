@@ -4,7 +4,7 @@ const yts = require('yt-search')
 module.exports = {
     name: 'ytvideo',
     aliases: ['ytv'],
-    category: 'dev',
+    category: 'devmedia',
     exp: 5,
     description: 'Downloads given YT Video',
     async execute(client, arg, M) {
