@@ -8,11 +8,14 @@ module.exports = {
     exp: 5,
     description: 'Downloads given YT Video',
     async execute(client, arg, M) {
-        const link = async (term) => {
+
+   /*    const link = async (term) => {
             const { videos } = await yts(term.trim())
             if (!videos || !videos.length) return null
             return videos[0].url
         }
+
+*/
         if (!arg) return M.reply('Please use this command with a valid youtube.com link')
         const validPathDomains = /^https?:\/\/(youtu\.be\/|(www\.)?youtube\.com\/(embed|v|shorts)\/)/
         const term = validPathDomains.test(arg) ? arg.trim() : await link(arg)
